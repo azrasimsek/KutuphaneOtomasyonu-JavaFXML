@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="UyeKitapGoruntule" prefHeight="500.0" prefWidth="590.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="application.UyeKitapGoruntuleController">
+   <children>
+      <AnchorPane fx:id="UyeKitapGor" layoutX="120.0" layoutY="100.0" prefHeight="500.0" prefWidth="590.0" style="-fx-background-color: FEFAE0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="150.0" layoutY="23.0" prefHeight="22.0" prefWidth="290.0" text="KÜTÜPHANEDEKİ KİTAPLARIN LİSTESİ" textFill="#715353">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableKitaplar" layoutX="28.0" layoutY="63.0" onMouseDragged="#tableKitaplar_MouseClick" prefHeight="262.0" prefWidth="534.0">
+              <columns>
+                <TableColumn fx:id="columnID" prefWidth="59.99996566772461" text="ID" />
+                <TableColumn fx:id="columnKitapAd" prefWidth="131.20001220703125" text="Kitap Adi" />
+                  <TableColumn fx:id="columnYazarAd" prefWidth="147.2000274658203" text="Yazar Adi" />
+                  <TableColumn fx:id="columnSayfa" prefWidth="92.0" text="Sayfa Sayisi" />
+                  <TableColumn fx:id="columnTur" prefWidth="105.59991455078125" text="Türü" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_oduncAl" layoutX="476.0" layoutY="369.0" mnemonicParsing="false" onAction="#btn_oduncAl_Click" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: CCD5AE;" text="ÖDÜNÇ AL">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_cikis" layoutX="476.0" layoutY="431.0" mnemonicParsing="false" onAction="#btn_cikis_Click" prefHeight="40.0" prefWidth="86.0" style="-fx-background-color: f4978e;" text="ÇIKIŞ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="29.0" layoutY="345.0" text="Kullanıcı Adınız :" />
+            <Label layoutX="29.0" layoutY="410.0" text="Şifreniz :" />
+            <Label layoutX="262.0" layoutY="345.0" text="Telefon Numaranız :" />
+            <Label layoutX="262.0" layoutY="428.0" text="Yetkiniz :" />
+            <TextField fx:id="txt_uyeAd" layoutX="28.0" layoutY="363.0" onAction="#txt_uyeAd_Click" promptText="Lütfen Tekrardan Giriniz..." />
+            <TextField fx:id="txt_uyeSifre" layoutX="28.0" layoutY="425.0" onAction="#txt_uyeSifre_Click" promptText="Lütfen Tekrardan Giriniz..." />
+            <TextField fx:id="txt_uyeTel" layoutX="262.0" layoutY="363.0" onAction="#txt_uyeTel_Click" promptText="Lütfen Tekrardan Giriniz..." />
+            <TextField fx:id="txt_uyeYetki" editable="false" layoutX="321.0" layoutY="424.0" onAction="#txt_uyeYetki_Click" prefHeight="26.0" prefWidth="94.0" text="0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

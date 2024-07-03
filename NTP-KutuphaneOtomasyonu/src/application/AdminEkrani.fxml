@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_adminMenu" prefHeight="500.0" prefWidth="894.0" style="-fx-background-color: FEFAE0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminEkraniController">
+   <children>
+      <AnchorPane fx:id="anchorTum" prefHeight="500.0" prefWidth="894.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="anchorSol" prefHeight="500.0" prefWidth="302.0">
+               <children>
+                  <Button fx:id="btn_ktpIslem" layoutY="187.0" mnemonicParsing="false" onAction="#btn_ktpIslem_Click" prefHeight="46.0" prefWidth="302.0" style="-fx-background-color: CCD5AE; -fx-border-color: D4A373;" text="Kitapları Düzenle">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="88.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../IMG/admin1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="109.0" layoutY="54.0" text="Hoşgeldin Admin" textFill="#366b5e">
+                     <font>
+                        <Font name="Candara" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="113.0" layoutY="78.0" prefHeight="20.0" prefWidth="149.0" text="-----------------------">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_islem" layoutX="71.0" layoutY="122.0" text="Kütüphane İşlemleri" textFill="#8c5959">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_hakkimizda" layoutY="409.0" mnemonicParsing="false" onAction="#btn_hakkimizda_Click" prefHeight="46.0" prefWidth="302.0" style="-fx-background-color: CCD5AE; -fx-border-color: D4A373;" text="Hakkımızda">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn_uyeIslemleri" layoutY="332.0" mnemonicParsing="false" onAction="#btn_uyeIslemleri_Click" prefHeight="46.0" prefWidth="302.0" style="-fx-background-color: CCD5AE; -fx-border-color: D4A373;" text="Üye İşlemleri">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btn_ktpOdunc" layoutY="260.0" mnemonicParsing="false" onAction="#btn_ktpOdunc_Click" prefHeight="46.0" prefWidth="302.0" style="-fx-background-color: CCD5AE; -fx-border-color: D4A373;" text="Ödünç Kitap İşlemleri">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorSag" layoutX="302.0" prefHeight="500.0" prefWidth="591.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

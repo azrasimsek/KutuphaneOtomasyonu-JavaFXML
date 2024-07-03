@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorKitapIslemleri" prefHeight="500.0" prefWidth="590.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="application.KitapIslemleriController">
+   <children>
+      <AnchorPane fx:id="anchorKitapIslem" layoutX="95.0" layoutY="71.0" prefHeight="500.0" prefWidth="590.0" style="-fx-background-color: FEFAE0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="234.0" layoutY="24.0" text="KİTAP İŞLEMLERİ" textFill="#7e5151">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableKitaplar" layoutX="20.0" layoutY="60.0" onMouseClicked="#tableKitaplar_MouseClick" prefHeight="256.0" prefWidth="549.0">
+              <columns>
+                <TableColumn fx:id="columnID" prefWidth="63.99996566772461" text="ID" />
+                <TableColumn fx:id="columnKitapAd" prefWidth="162.4000244140625" text="Kitap Adi" />
+                  <TableColumn fx:id="columnYazarAd" prefWidth="161.59999084472656" text="Yazar adi" />
+                  <TableColumn fx:id="columnSayfaSayisi" prefWidth="76.800048828125" text="Sayfa Sayisi" />
+                  <TableColumn fx:id="columnTur" prefWidth="88.0" text="Türü" />
+              </columns>
+            </TableView>
+            <Label layoutX="19.0" layoutY="325.0" prefHeight="18.0" prefWidth="550.0" text="-------------------------------------------------------------------------------------------------------------" />
+            <Label layoutX="24.0" layoutY="344.0" text="Kitap Adı" />
+            <Label layoutX="23.0" layoutY="408.0" text="Yazar Adı" />
+            <Label layoutX="222.0" layoutY="344.0" text="Sayfa Sayısı" />
+            <Label layoutX="222.0" layoutY="408.0" text="Türü" />
+            <Button fx:id="btn_guncelle" layoutX="422.0" layoutY="358.0" mnemonicParsing="false" onAction="#btn_guncelle_Click" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: CCD5AE;" text="GÜNCELLE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_kaydet" layoutX="422.0" layoutY="399.0" mnemonicParsing="false" onAction="#btn_kaydet_Click" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: CCD5AE;" text="KAYDET">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btn_sil" layoutX="422.0" layoutY="441.0" mnemonicParsing="false" onAction="#btn_sil_Click" prefHeight="34.0" prefWidth="98.0" style="-fx-background-color: f4978e;" text="SİL">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="txt_kitapAd" layoutX="24.0" layoutY="362.0" onAction="#txt_kitapAd_Click" prefHeight="26.0" prefWidth="174.0" />
+            <TextField fx:id="txt_yazarAd" layoutX="25.0" layoutY="432.0" onAction="#txt_yazarAd_Click" prefHeight="26.0" prefWidth="174.0" />
+            <TextField fx:id="txt_sayfaSayisi" layoutX="219.0" layoutY="362.0" onAction="#txt_sayfaSayisi_Click" prefHeight="26.0" prefWidth="158.0" />
+            <TextField fx:id="txt_tur" layoutX="219.0" layoutY="432.0" onAction="#txt_tur_Click" prefHeight="26.0" prefWidth="158.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

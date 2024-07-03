@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorUyeIslemleri" prefHeight="500.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UyeIslemleriController">
+   <children>
+      <AnchorPane fx:id="anchorUyeIslem" prefHeight="500.0" prefWidth="590.0" style="-fx-background-color: FEFAE0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="222.0" layoutY="23.0" text="ÜYE İŞLEMLERİ" textFill="#7b4f43">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_yetki" editable="false" layoutX="220.0" layoutY="416.0" onAction="#txt_yetki_Click" text="0" />
+            <TextField fx:id="txt_adSoyad" layoutX="30.0" layoutY="355.0" onAction="#txt_adSoyad_Click" />
+            <TextField fx:id="txt_sifre" layoutX="30.0" layoutY="416.0" onAction="#txt_sifre_Click" />
+            <TextField fx:id="txt_telefon" layoutX="220.0" layoutY="355.0" onAction="#txt_telefon_Click" />
+            <Button fx:id="btn_kaydet" layoutX="403.0" layoutY="347.0" mnemonicParsing="false" onAction="#btn_kaydet_Click" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: CCD5AE;" text="GÜNCELLE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="220.0" layoutY="398.0" text="Yetki" />
+            <Label layoutX="31.0" layoutY="333.0" text="Ad Soyad" />
+            <Label layoutX="31.0" layoutY="398.0" text="Şifre" />
+            <Label layoutX="220.0" layoutY="333.0" text="Telefon" />
+            <Button fx:id="btn_sil" layoutX="403.0" layoutY="433.0" mnemonicParsing="false" onAction="#btn_sil_Click" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: f4978e; -fx-border-color: fbc4ab;" text="SİL">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="21.0" layoutY="307.0" prefHeight="18.0" prefWidth="514.0" text="---------------------------------------------------------------------------------------------------" />
+            <TableView fx:id="tableUyeler" layoutX="31.0" layoutY="56.0" onMouseClicked="#tableUyeler_MouseClick" prefHeight="245.0" prefWidth="470.0">
+              <columns>
+                <TableColumn fx:id="columnID" prefWidth="61.60000228881836" text="ID" />
+                <TableColumn fx:id="columnAdSoyad" prefWidth="124.79998779296875" text="AdSoyad" />
+                  <TableColumn fx:id="columnSifre" prefWidth="92.80006408691406" text="sifre" />
+                  <TableColumn fx:id="columnTelefon" prefWidth="126.4000244140625" text="telefon" />
+                  <TableColumn fx:id="columnYetki" prefWidth="65.60003662109375" text="yetki" />
+              </columns>
+            </TableView>
+            <Button fx:id="btn_ekle" layoutX="403.0" layoutY="389.0" mnemonicParsing="false" onAction="#btn_ekle_Click" prefHeight="34.0" prefWidth="94.0" style="-fx-background-color: CCD5AE;" text="ÜYE EKLE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

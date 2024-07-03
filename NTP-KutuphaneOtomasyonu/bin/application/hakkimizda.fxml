@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorHakkimizda" prefHeight="500.0" prefWidth="591.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="application.hakkimizdaController">
+   <children>
+      <AnchorPane fx:id="anchorBilgi" prefHeight="500.0" prefWidth="591.0" style="-fx-background-color: FEFAE0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="226.0" layoutY="68.0" text="KÜTÜPHANE OTOMASYONU" textFill="#9ba184">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="136.0" fitWidth="140.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IMG/iste_arma.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="53.0" layoutY="219.0" prefHeight="20.0" prefWidth="223.0" text="Hazırlayan :         Azra ŞİMŞEK" textFill="#6b1d1d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="282.0" text="Öğrenci No :           212523002" textFill="#661e1e">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
